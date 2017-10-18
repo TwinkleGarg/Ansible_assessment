@@ -1,0 +1,9 @@
+---
+
+- name: Download rabbitmq rpm package
+  get_url:
+    url: 'https://www.rabbitmq.com/releases/rabbitmq-server/v3.6.1/rabbitmq-server-3.6.1-1.noarch.rpm'
+    dest: /root
+
+- name: Import rabbitmq public signing key
+  command: 'rpm --import https://www.rabbitmq.com/rabbitmq-signing-key-public.asc'

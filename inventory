@@ -1,0 +1,6 @@
+[webservers]
+server1 ansible_ssh_host=10.71.8.184
+
+[webservers:vars]
+anisble_ssh_user=root
+ansible_ssh_pass=root

@@ -1,0 +1,6 @@
+---
+
+- include: '{{ item }}'
+  with_items:
+    - 'download-rabbitmq.yml'
+    - 'install-rabbitmq.yml'

@@ -1,0 +1,13 @@
+---
+
+- name: Install rabbitmq
+  yum:
+    name: 'rabbitmq-server-3.6.1-1.noarch.rpm'
+    state: present
+
+- name: Start rabbitmq service
+  service:
+    name: 'rabbitmq-server'
+    state: started
+  notify:
+    - restart rabbitmq
